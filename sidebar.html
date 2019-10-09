@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NOTIFICATIONS</title>
 <style>
 body {font-family: "Lato", sans-serif;}
 
+  /* sidebar css*/
 .sidebar {
   height: 100%;
   width: 230px;
@@ -15,26 +19,21 @@ body {font-family: "Lato", sans-serif;}
   left: 0;
   background-color: #091429;
   overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 20px;
 }
 
-/* Lancers */
-.sidebar a {
-  /*padding: 6px 8px 6px 16px;
+/* sidebar paragragh */
+.sidebar p a {
   text-decoration: none;
-  font-size: 15px;
-  color: white;
-  display: block;*/
   margin-top: 30%;
-  text-align: center;
-  margin-left: 2%;
 font-style: none;
-font-weight: bold;
-font-size: 18px;
-line-height: 30px;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
 color: white;
 display: block;
 text-decoration: none;
+text-align: center;
 }
 
 .sidebar a:hover {
@@ -43,25 +42,28 @@ text-decoration: none;
 
 .main {
   margin-left: 230px; /* Same as the width of the sidenav */
-  margin-top: 80px;
+  margin-top: 90px;
   padding: 0px 10px;
 }
 
-.sidebar header { position: fixed;
-text-align: center;
-font-family: Pacifico;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 30%;
-margin-left: 7%;
-color: #FFFFFF;
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
 }
 
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
+
 </style>
 </head>
 <body>
@@ -69,22 +71,23 @@ color: #FFFFFF;
 
 <div class="sidebar">
 
-<header>Lancers</header>
+<img src="lancers1.png" alt="Lancers-logo" style="text-align: center;
+margin-left: 30%;
+size: 10%;">
 <ul>
 
-  <p><a href="#home"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a></p>
-  <p><a href="#clients"><i class="fa fa-user"></i> Client</a></p>
-  <p><a href="#"><i class="fa fa-fw fa-tasks"></i>Project
-      <i class="fa fa-caret-down"></i></a></p>
-  <p><a href="#invoice"><i class="fa fa-fw fa-clipboard"></i> Invoice</a></p>
-  <p><a href="#contract"><i class="fa fa-fw fa-file"></i> Contract</a></p>
-  <p><a href="#Proposals"><i class="fa fa-fw fa-edit"></i> Proposals</a></p>
+  <p><a href="#home"><img src="hicon.png" alt="home-icon"> Dashboard</p>
+  <p><a href="#clients"><img src="cicon.hng.png" alt="customer-icon"> Clients</a></p>
+  <p><a href="#"><img src="bicon.png" alt="lightbulb-icon"> Project
+      <i class="fa fa-caret-down"></i></p>
+  <p><a href="#invoice"><img src="iicon.png" alt="invoice-icon"> Invoice</a></p>
+  <p><a href="#contract"><img src="picon.png" alt="Project-icon"> Contract</a></p>
+  <p><a href="#Proposals"><img src="Aicon.png" alt="approval-icon"> Proposals</a></p>
 </ul>
 </div>
 
 <div class="main">
-  <h2>Notification</h2>
-</div>
-     
+  <h4>Notification</h4>
+
 </body>
 </html>
