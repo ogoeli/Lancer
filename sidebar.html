@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #091429;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Lancers */
+.sidebar a {
+  /*padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;*/
+  margin-top: 30%;
+  text-align: center;
+  margin-left: 2%;
+font-style: none;
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+color: white;
+display: block;
+text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 230px; /* Same as the width of the sidenav */
+  margin-top: 80px;
+  padding: 0px 10px;
+}
+
+.sidebar header { position: fixed;
+text-align: center;
+font-family: Pacifico;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 30%;
+margin-left: 7%;
+color: #FFFFFF;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="sidebar">
+
+<header>Lancers</header>
+<ul>
+
+  <p><a href="#home"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a></p>
+  <p><a href="#clients"><i class="fa fa-user"></i> Client</a></p>
+  <p><a href="#"><i class="fa fa-fw fa-tasks"></i>Project
+      <i class="fa fa-caret-down"></i></a></p>
+  <p><a href="#invoice"><i class="fa fa-fw fa-clipboard"></i> Invoice</a></p>
+  <p><a href="#contract"><i class="fa fa-fw fa-file"></i> Contract</a></p>
+  <p><a href="#Proposals"><i class="fa fa-fw fa-edit"></i> Proposals</a></p>
+</ul>
+</div>
+
+<div class="main">
+  <h2>Notification</h2>
+</div>
+     
+</body>
+</html>
