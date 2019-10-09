@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>NOTIFICATIONS</title>
+    
+    <style>
+        #flex{
+            top:56px;
+           
+            
+        }
+        img{
+            margin-top: 29px;
+            margin-left: 30px;
+        }
+    body {font-family: "Lato", sans-serif;}
+    
+    
+    h4{
+        margin-bottom: 19px;
+        font-weight: bold
+    }
+    
+    label {
+        color: #333;
+    }
+    h5{
+        font-weight: bold;
+    }
+    
+    .btn-send {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 20px;
+    }
+    
+    .help-block.with-errors {
+        color: #ff5050;
+        margin-top: 5px;
+    }
+    #row{
+        border: 2px whitesmoke solid;
+        margin-bottom: 10px;
+        
+
+    
+    }
+    #body{
+        top: 80px;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px
+    }
+    
+    .sidebar {
+      height: 100%;
+      width: 230px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #091429;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    
+    /* Lancers */
+    .sidebar p a {
+      /*padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;*/
+      margin-top: 30%;
+    font-style: none;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 230px; /* Same as the width of the sidenav */
+      margin-top: 90px;
+      padding: 0px 10px;
+    }
+    
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidebar">
+
+                    <img src="lancers1.png" alt="Lancers-logo" style="text-align: center;
+                    margin-left: 30%;
+                    size: 10%;">
+                    <ul>
+                    
+                      <p><a href="#home"><img src="hicon.png" alt="home-icon"> Dashboard</p>
+                      <p><a href="#clients"><img src="cicon.hng.png" alt="customer-icon"> Clients</a></p>
+                      <p><a href="#"><img src="bicon.png" alt="lightbulb-icon"> Project
+                          <i class="fa fa-caret-down"></i></p>
+                      <p><a href="#invoice"><img src="iicon.png" alt="invoice-icon"> Invoice</a></p>
+                      <p><a href="#contract"><img src="picon.png" alt="Project-icon"> Contract</a></p>
+                      <p><a href="#Proposals"><img src="Aicon.png" alt="approval-icon"> Proposals</a></p>
+                    </ul>
+                    </div>
+                    
+            </div>
+           
+                <div class="col-md-10" id="flex">
+                        <div class="row">
+                                <div class="col-md-12">
+                                   
+                                            <h4>Notification</h4>
+                        <div class="row" id="row">
+            <div class="col-md-12">
+                <div class="flex">
+                       
+                    <div><img src="img/group_86.png" alt="icon"></div>
+                    <div>
+                            <h5>A new invoice was created</h5>
+                            <p>It is a long established fact that a reader will be directed by the readable content of a page when at its layout</p>
+                            <datetime>Today 10:21AM</datetime>
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+        
+        <div class="row" id="row">
+                <div class="col-md-12">
+                    <div class="flex">
+                        <div><img src="group_86.png" alt="icon"></div>
+                        <div>
+                                <h5>A new invoice was created</h5>
+                                <p>It is a long established fact that a reader will be directed by the readable content of a page when at its layout</p>
+                                <datetime>Today 10:21AM</datetime>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+            
+        <div class="row" id="row">
+                <div class="col-md-12">
+                    <div class="flex">
+                        <div><img src="bookmark-ribbon.png" alt="icon"></div>
+                        <div>
+                                <h5>A new invoice was created</h5>
+                                <p>It is a long established fact that a reader will be directed by the readable content of a page when at its layout</p>
+                                <datetime>Today 10:21AM</datetime>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+      
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
